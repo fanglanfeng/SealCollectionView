@@ -16,6 +16,7 @@
 #warning 在可视区里上水平方向上cell的数量 ->和cell的总数量区别开
     CGFloat countOne = 4;
     
+#pragma mark - 下面的是做水平方向上的布局
     //每个cell之间的水平距离，
     CGFloat HonMargin = 10;
     
