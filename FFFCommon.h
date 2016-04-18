@@ -23,21 +23,23 @@
  *
  *  @param count  在屏幕视区内的cell数量
  *  @param margin 每一个cell之间的距离
+ *  @param CellHeight 每一个cell的高度
  *  @param frame  collectionView的frame
  *
  *  @return 设置好的layout(布局)
  */
-+(UICollectionViewFlowLayout *)flowLayoutCountInOneScreenWidthCount:(CGFloat)count HorizontalMargin:(CGFloat)margin ColltionFrame:(CGRect)frame;
-
++(UICollectionViewFlowLayout *)flowLayoutCountInOneScreenWidthCount:(CGFloat)count HorizontalMargin:(CGFloat)margin CellHeight:(CGFloat)cellHeight ColltionFrame:(CGRect)frame;
 /**
  *  垂直布局
  *
  *  @param count  在屏幕视区内的cell数量
  *  @param margin 每一个cell之间的距离
+ *  @param CellHeight 每一个cell的高度
  *  @param frame  collectionView的frame
  *
  *  @return 设置好的layout(布局)
  */
-+(UICollectionViewFlowLayout *)flowLayoutCountInOneScreenWidthCount:(CGFloat)count VerticalMargin:(CGFloat)margin ColltionFrame:(CGRect)frame;
++(UICollectionViewFlowLayout *)flowLayoutCountInOneScreenWidthCount:(CGFloat)count VerticalMargin:(CGFloat)margin CellHeight:(CGFloat)cellHeight ColltionFrame:(CGRect)frame;
+
 
 @end
