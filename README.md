@@ -4,8 +4,9 @@
 
 
 /**
- *  实现CollectionView的布局和初始化
+ *  封装的函数->实现CollectionView的布局和初始化
  */
+
 -(void)initLayoutWithCollection{
     //collection的宽度
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
