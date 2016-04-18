@@ -35,7 +35,7 @@
     [self.view addSubview:Honseal];
     
 #pragma mark - 下面的是做垂直方向上的布局
-//   =====================
+
     //每个cell之间的垂直距离 默认和水平的距离一样的
     CGFloat VerMargin = HonMargin;
     
@@ -53,7 +53,6 @@
     
      //得到垂直方向上  layout  的布局样式
     UICollectionViewFlowLayout *VerLayout = [FFFCommon flowLayoutCountInOneScreenWidthCount:countOne VerticalMargin:VerMargin ColltionFrame:VerFrame];
-//   =====================
     
     //初始化collection ->垂直水平方向
     SealCollectionView *Verseal = [[SealCollectionView alloc] initWithFrame:VerFrame collectionViewLayout:VerLayout];
