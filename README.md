@@ -27,7 +27,8 @@
     CGRect HorFrame = CGRectMake(0, 50, screenSize.width, cellWidth + 2*HonMargin);
     
     //得到水平方向上  layout  的布局样式
-    UICollectionViewFlowLayout *HoLayout = [FFFCommon flowLayoutCountInOneScreenWidthCount:countOne HorizontalMargin:HonMargin ColltionFrame:HorFrame];
+    UICollectionViewFlowLayout *HoLayout =     UICollectionViewFlowLayout *layout = [FFFCommon flowLayoutCountInOneScreenWidthCount:countOne HorizontalMargin:cellWidth CellHeight:cellWidth ColltionFrame:HorFrame];
+
     
     //初始化collection ->水平方向
     SealCollectionView *Honseal = [[SealCollectionView alloc] initWithFrame:HorFrame collectionViewLayout:HoLayout];
@@ -52,7 +53,7 @@
     CGRect VerFrame = CGRectMake(0, 200, screenSize.width, cellHeight + 2 * VerMargin); //marginHeight
     
      //得到垂直方向上  layout  的布局样式
-    UICollectionViewFlowLayout *VerLayout = [FFFCommon flowLayoutCountInOneScreenWidthCount:countOne VerticalMargin:VerMargin ColltionFrame:VerFrame];
+    UICollectionViewFlowLayout *VerLayout = [FFFCommon flowLayoutCountInOneScreenWidthCount:countOne VerticalMargin:VerMargin CellHeight:cellHeight ColltionFrame:VerFrame];
     
     //初始化collection ->垂直水平方向
     SealCollectionView *Verseal = [[SealCollectionView alloc] initWithFrame:VerFrame collectionViewLayout:VerLayout];
