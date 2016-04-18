@@ -16,27 +16,27 @@
     return cellWidth;
 }
 
-+(UICollectionViewFlowLayout *)flowLayoutCountInOneScreenWidthCount:(CGFloat)count HorizontalMargin:(CGFloat)margin ColltionFrame:(CGRect)frame{
++(UICollectionViewFlowLayout *)flowLayoutCountInOneScreenWidthCount:(CGFloat)count HorizontalMargin:(CGFloat)margin CellHeight:(CGFloat)cellHeight ColltionFrame:(CGRect)frame{
     
     //每一个cell的宽度
     CGFloat cellWidth = [FFFCommon CollectionCellWidth:frame.size.width CountInOneScreenWidthNumber:count margin:margin];
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     
-    layout.itemSize = CGSizeMake(cellWidth,cellWidth);
+    layout.itemSize = CGSizeMake(cellWidth,cellHeight);
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     layout.minimumLineSpacing = margin;
     layout.minimumInteritemSpacing = margin;
     layout.sectionInset = UIEdgeInsetsMake(0, margin, 0, margin); //上 左 下 右
     return layout;
 }
-+(UICollectionViewFlowLayout *)flowLayoutCountInOneScreenWidthCount:(CGFloat)count VerticalMargin:(CGFloat)margin ColltionFrame:(CGRect)frame{
++(UICollectionViewFlowLayout *)flowLayoutCountInOneScreenWidthCount:(CGFloat)count VerticalMargin:(CGFloat)margin CellHeight:(CGFloat)cellHeight ColltionFrame:(CGRect)frame{
     
     //每一个cell的宽度
     CGFloat cellWidth = [FFFCommon CollectionCellWidth:frame.size.width CountInOneScreenWidthNumber:count margin:margin];
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.itemSize = CGSizeMake(cellWidth,cellWidth);
+    layout.itemSize = CGSizeMake(cellWidth,cellHeight);
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
     layout.minimumLineSpacing = margin;
     layout.minimumInteritemSpacing = margin;
