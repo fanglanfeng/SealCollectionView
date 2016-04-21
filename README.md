@@ -1,5 +1,5 @@
 # SealCollectionView
-
+# 封装collectionView的布局
 使用说明
 
 
